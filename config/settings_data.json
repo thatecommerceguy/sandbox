@@ -3,7 +3,40 @@
     "body_text": "#00ffff",
     "heading_font": "roboto_n4",
     "shipping_price": 4,
-    "content_for_index": []
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "header-0": {
+            "type": "product_card",
+            "settings": {
+              "product_title": "Product 1",
+              "product_url": "",
+              "product_btn_text": "Buy Now"
+            }
+          },
+          "header-1": {
+            "type": "product_card",
+            "settings": {
+              "product_title": "Product 2",
+              "product_url": "",
+              "product_btn_text": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "header-0",
+          "header-1"
+        ],
+        "settings": {
+          "announcement_bar": "Get free delivery on orders over $100",
+          "menu": "test-menu"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
