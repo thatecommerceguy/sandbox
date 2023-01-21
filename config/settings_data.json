@@ -1,1 +1,51 @@
-{"current":{"body_text":"#00ffff","heading_font":"roboto_n4","shipping_price":4,"sections":{"header":{"type":"header","settings":{"announcement_bar":"Get free delivery on orders over $100","menu":"test-menu","product_1":"awesome-tshirt","product_2":"awesome-tshirt"}}},"content_for_index":[]},"presets":{"Default":{"body_text":"#00ffff","heading_font":"roboto_n4"},"Preset 2":{"body_text":"#ff00ff","heading_font":"serif"}}}
+{
+  "current": {
+    "body_text": "#00ffff",
+    "heading_font": "roboto_n4",
+    "shipping_price": 4,
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "ab043be5-0ca9-4081-8ab4-0ad53f12759c": {
+            "type": "product_card",
+            "settings": {
+              "product_title": "",
+              "product_url": "",
+              "product_btn_text": ""
+            }
+          },
+          "be54501b-ee26-4abe-8435-90ef3325ff89": {
+            "type": "product_card",
+            "settings": {
+              "product_title": "",
+              "product_url": "",
+              "product_btn_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "ab043be5-0ca9-4081-8ab4-0ad53f12759c",
+          "be54501b-ee26-4abe-8435-90ef3325ff89"
+        ],
+        "settings": {
+          "announcement_bar": "Get free delivery on orders over $100",
+          "menu": "test-menu"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
+      "body_text": "#00ffff",
+      "heading_font": "roboto_n4"
+    },
+    "Preset 2": {
+      "body_text": "#ff00ff",
+      "heading_font": "serif"
+    }
+  }
+}
