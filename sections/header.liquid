@@ -63,7 +63,7 @@
                         {{
                           block.settings.product_image
                           | image_url: height: 300
-                          | image_tag: height: 240, width: 240, class: 'object-cover object-center', alt: logo_alt
+                          | image_tag: height: 240, width: 240, class: 'object-cover object-center'
                         }}
                       {% else %}
                         {{ 'image' | placeholder_svg_tag: 'object-cover object-center' }}
@@ -228,11 +228,7 @@
                                       {{
                                         block.settings.product_image
                                         | image_url: height: 400
-                                        | image_tag:
-                                          height: 300,
-                                          width: 300,
-                                          class: 'object-cover object-center',
-                                          alt: logo_alt
+                                        | image_tag: height: 300, width: 300, class: 'object-cover object-center'
                                       }}
                                     {% else %}
                                       {{ 'image' | placeholder_svg_tag: 'object-cover object-center' }}
