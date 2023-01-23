@@ -1,7 +1,7 @@
-class OffCanvasMenu extends HTMLElement {
+class MenuDrawer extends HTMLElement {
   constructor() {
     super();
-    this.offCanvas = this.querySelector("off-canvas");
+    this.drawerContent = this.querySelector("drawer-content");
     this.backDrop = this.querySelector("#back-drop");
     this.openBtn = this.querySelector("[data-menu-toggle='open']");
     this.closeBtn = this.querySelector("[data-menu-toggle='close']");
@@ -11,18 +11,18 @@ class OffCanvasMenu extends HTMLElement {
   }
 
   openMenu() {
-    this.offCanvas.classList.remove("-translate-x-full");
-    this.offCanvas.classList.add("translate-x-0");
+    this.drawerContent.classList.remove("-translate-x-full");
+    this.drawerContent.classList.add("translate-x-0");
     this.backDrop.classList.remove("opacity-0");
     this.backDrop.classList.add("z-40", "opacity-100");
   }
 
   closeMenu() {
-    this.offCanvas.classList.remove("translate-x-0");
-    this.offCanvas.classList.add("-translate-x-full");
+    this.drawerContent.classList.remove("translate-x-0");
+    this.drawerContent.classList.add("-translate-x-full");
     this.backDrop.classList.remove("z-40", "opacity-100");
     this.backDrop.classList.add("opacity-0");
   }
 }
 
-customElements.define("off-canvas-menu", OffCanvasMenu);
+customElements.define("menu-drawer", MenuDrawer);
