@@ -398,23 +398,26 @@
       ]
     }
   ],
-  "default": {
-    "blocks": [
-      {
-        "type": "product_card",
-        "settings": {
-          "product_title": "Product 1",
-          "product_btn_text": "Buy Now"
+  "presets": [
+    {
+      "name": "Header",
+      "blocks": [
+        {
+          "type": "product_card",
+          "settings": {
+            "product_title": "Product 1",
+            "product_btn_text": "Buy Now"
+          }
+        },
+        {
+          "type": "product_card",
+          "settings": {
+            "product_title": "Product 2",
+            "product_btn_text": "Shop Now"
+          }
         }
-      },
-      {
-        "type": "product_card",
-        "settings": {
-          "product_title": "Product 2",
-          "product_btn_text": "Shop Now"
-        }
-      }
-    ]
-  }
+      ]
+    }
+  ]
 }
 {% endschema %}
