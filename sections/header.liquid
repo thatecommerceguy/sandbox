@@ -1,3 +1,6 @@
+<script src="{{ 'off-canvas.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'tab-panel.js' | asset_url }}" defer="defer"></script>
+
 <off-canvas-menu class="bg-white">
   <off-canvas
     class="fixed transition duration-300 ease-in-out transform -translate-x-full bg-white h-full z-[60] inset-0 w-full max-w-xs lg:hidden"
@@ -12,7 +15,7 @@
           class="inline-flex items-center justify-center p-2 -m-2 text-gray-400 rounded-md"
         >
           <span class="sr-only">Close menu</span>
-          <!-- Heroicon name: outline/x-mark -->
+          {% comment %} Heroicon name: outline/x-mark {% endcomment %}
           <svg
             class="w-6 h-6"
             xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +169,7 @@
         <div class="flex items-center h-16">
           <button type="button" data-menu-toggle="open" class="p-2 text-gray-400 bg-white rounded-md lg:hidden">
             <span class="sr-only">Open menu</span>
-            <!-- Heroicon name: outline/bars-3 -->
+            {% comment %} Heroicon name: outline/bars-3 {% endcomment %}
             <svg
               class="w-6 h-6"
               xmlns="http://www.w3.org/2000/svg"
@@ -307,7 +310,7 @@
             <div class="flex lg:ml-6">
               <a href="#" class="p-2 text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Search</span>
-                <!-- Heroicon name: outline/magnifying-glass -->
+                {% comment %} Heroicon name: outline/magnifying-glass {% endcomment %}
                 <svg
                   class="w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +328,7 @@
 
             <div class="flow-root ml-4 lg:ml-6">
               <a href="{{ routes.cart_url }}" class="flex items-center p-2 -m-2 group">
-                <!-- Heroicon name: outline/shopping-bag -->
+                {% comment %} Heroicon name: outline/shopping-bag {% endcomment %}
                 <svg
                   class="flex-shrink-0 w-6 h-6 text-gray-400 group-hover:text-gray-500"
                   xmlns="http://www.w3.org/2000/svg"
@@ -350,9 +353,6 @@
     </nav>
   </header>
 </off-canvas-menu>
-
-{{ 'off-canvas.js' | asset_url | script_tag }}
-{{ 'tab-panel.js' | asset_url | script_tag }}
 
 {% schema %}
 {
