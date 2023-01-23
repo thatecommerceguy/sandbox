@@ -1,6 +1,5 @@
-<div class="bg-white">
-  <div
-    id="off-canvas"
+<off-canvas-menu class="bg-white">
+  <off-canvas
     class="fixed transition duration-300 ease-in-out transform -translate-x-full bg-white h-full z-[60] inset-0 w-full max-w-xs lg:hidden"
     role="dialog"
     aria-modal="true"
@@ -28,7 +27,7 @@
         </button>
       </div>
 
-      <div class="mt-2">
+      <tab-panel class="mt-2">
         <div class="border-b border-gray-200">
           <div class="flex px-4 -mb-px space-x-8" aria-orientation="horizontal" role="tablist">
             {% for link in section.settings.menu.links %}
@@ -104,7 +103,7 @@
             </div>
           {% endif %}
         {% endfor %}
-      </div>
+      </tab-panel>
 
       <div class="px-4 py-6 space-y-6 border-t border-gray-200">
         {% for link in section.settings.menu.links %}
@@ -148,14 +147,14 @@
         {% endif %}
       </div>
     </div>
-  </div>
+  </off-canvas>
 
   <div
     id="back-drop"
     class="fixed inset-0 w-full h-full transition-opacity duration-300 ease-linear bg-black bg-opacity-25 opacity-0"
   ></div>
 
-  <header id="main-header" class="relative bg-white">
+  <header class="relative bg-white">
     <p
       class="flex items-center justify-center h-10 px-4 text-sm font-medium text-white bg-indigo-600 sm:px-6 lg:px-8"
     >
@@ -354,9 +353,10 @@
       </div>
     </nav>
   </header>
-</div>
+</off-canvas-menu>
 
 {{ 'off-canvas.js' | asset_url | script_tag }}
+{{ 'tab-panel.js' | asset_url | script_tag }}
 
 {% schema %}
 {
