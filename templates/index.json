@@ -1,1 +1,47 @@
-{"sections":{"main":{"type":"featured-articles","settings":{"body_text":"#000000"}}},"order":["main"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "featured-articles",
+      "settings": {
+        "body_text": "#000000"
+      }
+    },
+    "header_PiNDya": {
+      "type": "header",
+      "blocks": {
+        "product_card_t4qnKf": {
+          "type": "product_card",
+          "settings": {
+            "product": ""
+          }
+        },
+        "product_card_U6LFE8": {
+          "type": "product_card",
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_card_t4qnKf",
+        "product_card_U6LFE8"
+      ],
+      "settings": {
+        "menu": "main-menu"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header_PiNDya"
+  ]
+}
