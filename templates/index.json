@@ -9,12 +9,6 @@
 */
 {
   "sections": {
-    "main": {
-      "type": "featured-articles",
-      "settings": {
-        "body_text": "#000000"
-      }
-    },
     "header_PiNDya": {
       "type": "header",
       "blocks": {
@@ -41,7 +35,6 @@
     }
   },
   "order": [
-    "main",
     "header_PiNDya"
   ]
 }
