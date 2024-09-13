@@ -9,6 +9,12 @@
 */
 {
   "sections": {
+    "announcement_bar_iide6e": {
+      "type": "announcement-bar",
+      "settings": {
+        "announcement_bar": "This section was edited from rivora"
+      }
+    },
     "header_PiNDya": {
       "type": "header",
       "blocks": {
@@ -35,6 +41,7 @@
     }
   },
   "order": [
+    "announcement_bar_iide6e",
     "header_PiNDya"
   ]
 }
